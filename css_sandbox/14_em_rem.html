@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 em and rem units</title>
+  <style>
+    #box-1 {
+      font-size: 20px;
+    }
+
+    #box-1 ul {
+      font-size: 1.3em;
+    }
+
+    #box-2 h3 {
+      font-size: 2rem;
+    }
+
+    #box-2 p {
+      font-size: 1.5rem;
+    }
+
+    #box-2 ul {
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="box-1">
+    <h3>Box one</h3>
+    <p>em units. relative to the font size of the element.</p>
+    <ul>
+      <li>1 (font size * 1.3em)</li>
+      <li>2
+        <ul>
+          <li>1 (font size * 1.3em * 1.3em)</li>
+          <li>2
+            <ul>
+              <li>1 (font size * 1.3em * 1.3em * 1.3em)</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li>3</li>
+      <li>4</li>
+    </ul> 
+  </div>
+  <div id="box-2">
+    <h3>Box two</h3>
+    <p>rem units. relative to the font size of the root element. RECOMMENDED TO USE THESE UNITS</p>
+    <ul>
+      <li>1 (font size * 1.3rem)</li>
+      <li>2
+        <ul>
+          <li>1 (font size * 1.3rem)</li>
+          <li>2
+            <ul>
+              <li>1 (font size * 1.3rem)</li>
+              <li>2</li>
+              <li>3</li>
+            </ul>
+          </li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li>3</li>
+      <li>4</li>
+    </ul> 
+  </div>
+</body>
+</html>

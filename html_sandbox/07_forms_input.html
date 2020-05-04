@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 forms input</title>
+</head>
+<body>
+  <form action="process">
+    <!-- text -->
+    <div>
+      <label for="name">Name</label> <!-- if set for to the same as the id of the input box, clicking the will give focus to the input box -->
+      <input type="text" id="name" name="name" value="John"> <!-- name attribute is used on the server -->
+    </div>
+    
+    <!-- email -->
+    <div>
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" placeholder="enter email">
+    </div>
+    
+    <!-- textarea -->
+    <div>
+      <label for="message">Message</label>
+      <br>
+      <textarea name="message" id="message" cols="30" rows="5"></textarea>
+    </div>
+
+    <!-- select -->
+    <div>
+      <label for="sex">Sex</label>
+      <select name="sex" id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <!-- number -->
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age">
+    </div>
+
+    <!-- date -->
+    <div>
+      <label for="birthdate">Birthdate</label>
+      <input type="date" name="birthdate" id="birthdate">
+    </div>
+
+    <!-- radio -->
+    <div>
+      <label for="membership">membership</label>
+      <input type="radio" name="membership" value="simple" id="membership">Simple
+      <input type="radio" name="membership" value="standard" id="membership" checked>Standard
+      <input type="radio" name="membership" value="advanced" id="membership">Advanced
+    </div>
+
+    <!-- checkbox -->
+    <div>
+      <label for="membership">Hobbies</label>
+      <input type="checkbox" name="Hobbies" value="cycling" id="Hobbies">Cycling
+      <input type="checkbox" name="Hobbies" value="running" id="Hobbies" checked>Running
+      <input type="checkbox" name="Hobbies" value="swimming" id="Hobbies">Swimming
+    </div>
+
+    <!-- input submit -->
+    <input type="submit" value="Submit">
+
+    <!-- button submit -->
+    <!-- using button tag. this is the same as submit input type -->
+    <!-- <button type="submit">Submit</button> -->
+
+    <!-- reset button -->
+    <button type="reset">Reset</button>
+  </form>
+</body>
+</html>

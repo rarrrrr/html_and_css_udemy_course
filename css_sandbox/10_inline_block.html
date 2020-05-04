@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 inline block</title>
+  <style>
+    li {
+      display: inline; /* display horizontally */
+    }
+
+    li a {
+      padding-right: 20px;
+    }
+
+    img {
+      display: block; /* img is inline element by default. this makes block element. without this, the margin: auto; would not work */
+      margin: auto;
+    }
+
+    .box {
+      width: 32%;
+      display: inline-block; /* width and margin-bottom cannot be used with display: inline. use inline-block instead */
+      box-sizing: border-box; /* without this, last box goes to next line */
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Science</a></li>
+  </ul>
+
+  <br><br>
+
+  <img src="/images/leaf.png" alt="leaf">
+
+  <br><br>
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ad exercitationem harum odit modi dignissimos quaerat id consequatur commodi aliquam? Impedit quibusdam corporis nulla officiis aliquam laborum ullam voluptates assumenda!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ad exercitationem harum odit modi dignissimos quaerat id consequatur commodi aliquam? Impedit quibusdam corporis nulla officiis aliquam laborum ullam voluptates assumenda!</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet ad exercitationem harum odit modi dignissimos quaerat id consequatur commodi aliquam? Impedit quibusdam corporis nulla officiis aliquam laborum ullam voluptates assumenda!</p>
+  </div>
+</body>
+</html>

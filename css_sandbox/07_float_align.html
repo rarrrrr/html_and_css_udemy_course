@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>07 float align</title>
+  <style>
+    * {
+      box-sizing: border-box; /* remove padding from box widths */
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+
+    .container {
+      max-width: 960px; /* width is not responsive */
+      margin: 30px auto; /* 30px top and bottom and auto makes left and right the same */
+    }
+
+    .clear {
+      clear: both;
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 1px solid #333;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+    .box p {
+      /* text align */
+      text-align: justify;
+    }
+
+    #box-2 {
+      float: left;
+      width: 68%;
+    }
+
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam perspiciatis maiores adipisci earum odio tempora repudiandae quaerat!</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Placeat iure voluptatum consequuntur rem fugit tempore aliquid id vel. Sint beatae.</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus cupiditate dignissimos at molestiae dolores rem et eaque voluptatem quidem illo delectus, aliquam esse quod numquam voluptas, sed eligendi? Mollitia, quaerat.</p>
+    </div>
+    <div class="clear"></div>
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel placeat quis sunt quas non expedita animi! Animi eligendi vero itaque, quaerat dignissimos beatae nesciunt, impedit inventore sapiente vel incidunt laborum!</p>
+    </div>
+  </div>
+</body>
+</html>

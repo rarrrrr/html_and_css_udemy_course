@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>06 box model - margin and padding</title>
+
+  <style>
+    /* css reset, * selects all elements so that defaults can be set */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box; /* keeps box width the same size and makes content such as text fit inside */
+    }
+
+    .box {
+      background: #f4f4f4;
+      border: 2px solid #777;
+      width: 500px;
+
+      /* padding on all sides */
+      padding: 20px;
+
+      /* padding per side. this will overwrite any properties set above  */
+      padding-top: 10px;
+      padding-right: 20px;
+      padding-bottom: 10px;
+      padding-left: 20px;
+
+      /* padding shorthand (specifying each side). order of values: top, right, bottom, left */
+      padding: 10px 20px 10px 20px;
+
+      /* padding shorthand (specifying top & bottom together and left & right together). order top/bottom, left/right */
+      padding: 10px 20px;
+
+
+      /* margin on all sides */
+      margin: 20px;
+
+      /* margin per side. this will overwrite any properties set above  */
+      margin-top: 10px;
+      margin-right: 20px;
+      margin-bottom: 10px;
+      margin-left: 20px;
+
+      /* margin shorthand (specifying each side). order of values: top, right, bottom, left */
+      margin: 10px 20px 10px 20px;
+
+      /* margin shorthand (specifying top & bottom together and left & right together). order top/bottom, left/right */
+      margin: 10px 20px;
+    }
+
+    .box h3 {
+      padding-bottom: 10px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h3>Box One</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur ullam itaque fuga corrupti alias aliquid doloremque placeat tempora aut excepturi minima officia expedita atque, obcaecati, ut fugiat repellendus. Voluptatem.</p>
+  </div>
+  <div class="box">
+    <h3>Box Two</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non tenetur ullam itaque fuga corrupti alias aliquid doloremque placeat tempora aut excepturi minima officia expedita atque, obcaecati, ut fugiat repellendus. Voluptatem.</p>
+  </div>
+</body>
+</html>
