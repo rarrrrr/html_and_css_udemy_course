@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>nth child pseudo selectors</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    li {
+      padding: 0.25rem;
+      margin: 0.25rem;
+      list-style: none;
+      /* removes bullet points */
+    }
+
+    /* first item */
+    li:first-child {
+      background: red;
+    }
+
+    /* 3rd item */
+    li:nth-child(3) {
+      background: purple;
+      color: white;
+    }
+
+    /* every 3rd item 
+      (first number is the counter and the 2nd is the offset.
+      the 2nd number is optional and if not supplied, defaults to 0) */
+    li:nth-child(3n + 8) {
+      background: orange;
+    }
+
+    /* odd or even items */
+    li:nth-child(odd) {
+      font-style: italic;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+    <li>Item 6</li>
+    <li>Item 7</li>
+    <li>Item 8</li>
+    <li>Item 9</li>
+    <li>Item 10</li>
+    <li>Item 11</li>
+    <li>Item 12</li>
+    <li>Item 13</li>
+    <li>Item 14</li>
+    <li>Item 15</li>
+    <li>Item 16</li>
+    <li>Item 17</li>
+    <li>Item 18</li>
+    <li>Item 19</li>
+    <li>Item 20</li>
+  </ul>
+</body>
+
+</html>
